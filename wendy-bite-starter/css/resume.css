@@ -1,0 +1,111 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+
+/* Layout */
+body {
+	background-color: #444444;
+	color: #FFFFFF;
+	padding: 20px;
+	margin: 15px;
+	border: 5px solid gray;
+	}
+
+main {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 10px 0;
+	margin: 10px;
+}
+
+.fix{
+	border: 10px;
+	clear: right;
+}
+/* ------------------------ */
+
+
+
+/* Headings */
+header {
+	text-align: center;
+}
+
+.title {
+	font-size: 36px;
+	margin-bottom: 5px;
+	font-style: italic;
+}
+
+h1, li {
+	font-family: arial;
+}
+
+.nav li {
+	display: inline;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	font-weight: bold;
+	border-right: 2px solid gray;
+	padding-right: 5px;
+}
+
+.nav li:last-child {
+	border: none;
+}
+
+h1 {
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+footer {
+	text-align: center;
+}
+
+/* ------------------------ */
+
+
+
+/* Navigation Lists */
+/* ------------------------ */
+
+
+
+/* Links */
+a {
+	color: #23D39E;
+}
+/* ------------------------ */
+
+
+
+/* About Me page */
+img {
+	float: right;
+	padding: 5px;
+	border: 1px solid gray;
+	margin-left: 10px;
+	margin-bottom: 5px;;
+	/* margin: 0px 0px 20px 10px; */
+	display: block;
+}
+/* ------------------------ */
+
+
+
+/* Resume page */
+/* ------------------------ */
+
+
+
+/* Resume page - Experience */
+/* ------------------------ */
