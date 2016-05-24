@@ -23,6 +23,21 @@ section {
   flex: 2;
 }
 
+section div {
+  position: relative;
+}
+
+section span {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #ffffff;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 21px;
+  text-align: center;
+}
+
 aside {
   padding: 20px;
   background: #EBD17E;
