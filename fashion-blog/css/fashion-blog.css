@@ -60,10 +60,19 @@ main li {
   font-size: 30px;
 }
 
-/* First Letter
-.article::first-letter {
-  font-size: 300%;
+/* .article::first-letter {
+  font-size: 200%;
+  color: #DEDEDE;
 } */
+
+span {
+  font-size:40px;
+  color: #DFDFDF;
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-right: 8px;
+}
 
 .display a {
   margin-top: 18px;
