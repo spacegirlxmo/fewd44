@@ -20,6 +20,8 @@ function compareNumbers () {
   var firstValue = firstNumber.value;
   firstValue = parseInt(firstValue);
 
+  console.log(secondValue);
+
   var secondValue = secondNumber.value;
   secondValue = parseInt(secondValue);
 
