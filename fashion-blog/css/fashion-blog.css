@@ -109,34 +109,3 @@ span {
 .footer-nav li:last-child {
   border-right: none;
 }
-
-.first {
-  border-bottom: solid 1px #DFDFDF;
-}
-
-.second {
-  padding-bottom: 10px;
-  border-bottom: solid 1px #DFDFDF;
-  background-color: #DFDFDF;
-  width: 220px;
-  line-height: 180px;
-  text-align: center;
-}
-
-.third {
-  border-bottom: solid 1px #DFDFDF;
-}
-
-.left {
-  display: flex;
-}
-
-aside {
-  display: flex;
-  padding-top: 110px;
-}
-
-aside ol {
-  list-style-type: none;
-  padding-left: 50px;
-}
