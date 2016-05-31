@@ -5,14 +5,34 @@
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="css/temp.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
     <h1>Temperature Converter</h1>
 
-    <input class="fahrenheit">
+    <div class="converter">
 
-    <button class="convert">Convert!</button>
+      <div class="f-container">
+        <p>Fahrenheit</p>
+        <input class="fahrenheit">
+      </div>
+
+      <div class="equals-to">
+        <p class="equal-sign">=</p>
+      </div>
+
+      <div class="c-container">
+        <p>Celsius</p>
+        <input class="celsius">
+      </div>
+
+    </div>
+
+    <footer>
+      <img src="img/temperature-2-xxl.png">
+      <p class="rights">&copy;2016 Temperature Converter</p>
+    </footer>
 
   <script src="js/temp.js"></script>
   </body>
