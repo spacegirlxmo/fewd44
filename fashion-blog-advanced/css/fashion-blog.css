@@ -29,6 +29,7 @@ h2 {
 .nav {
   display: flex;
   background-color: black;
+  justify-content: flex-start;
 }
 
 .nav li {
@@ -49,11 +50,30 @@ img {
   width: 100%;
 }
 
+.left {
+  display: flex;
+}
+
+main {
+  flex: 2;
+}
+
+aside {
+  flex: 1;
+  padding-top: 110px;
+  font-size: 16px;
+}
+
+aside ol {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
 main li {
   margin-top: 40px;
   list-style-type: none;
   padding-bottom: 30px;
-  bottom-border: solid 1px #DFDFDF;
+  border-bottom: solid 1px #DFDFDF;
 }
 
 .title {
@@ -139,20 +159,6 @@ span {
   padding-bottom: 10px;
 }
 
-.left {
-  display: flex;
-}
-
-aside {
-  display: flex;
-  padding-top: 110px;
-  font-size: 16px;
-}
-
-aside ol {
-  list-style-type: none;
-  padding-left: 50px;
-}
 
 .more {
   color: #DE3B30;
@@ -173,14 +179,10 @@ aside ol {
 
 @media (max-width: 600px) {
 
-	.content {
+	.left {
 		flex-direction: column;
 	}
 
-	.main,
-	.aside {
-		padding: 0 20px;
-	}
 
 	header,
 	footer {
@@ -197,15 +199,14 @@ aside ol {
 
 
 	.nav li {
-	color:#999999;
-	text-decoration: none;
-	font-size: 18px;
-	padding-bottom: 15px;
-	text-align: center;
-
+	  color:#999999;
+  	text-decoration: none;
+  	font-size: 18px;
+  	padding-bottom: 15px;
+  	text-align: center;
 	}
 
-	.aside {
+	aside {
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
