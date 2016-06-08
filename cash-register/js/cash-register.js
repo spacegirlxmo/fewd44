@@ -49,16 +49,6 @@ function updateTotal() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 // function updateTotal() {
 //   var finalTotal = 0;
 //   //forEach means the (global) function is called for each item in the itemList array
