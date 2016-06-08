@@ -27,6 +27,7 @@ function fahrenheitToCelsius() {
 }
 
 function celsiusToFahrenheit() {
+  
   console.log("fn celsiusToFahrenheit");
 
   //get data from page

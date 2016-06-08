@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: ivory;
+  font-family: Arial;
+  height: 100%;
+}
+
+main {
+  margin: 50px;
+}
+
+ul {
+  display: flex;
+  margin: 20px 0;
+}
+
+li {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin-right: 20px;
+  text-indent: -3000px;
+}
+
+li:hover {
+  box-shadow: 0 0 9px 3px #FFE4E1;
+}
+
+.aquamarine {
+  background: aquamarine;
+  color: mediumpurple;
+}
+
+.darkseagreen {
+  background: darkseagreen;
+  color: palevioletred;
+}
+
+.lightseagreen {
+  background: lightseagreen;
+  color: indigo;
+  background: repeating-linear-gradient(-45deg, lightseagreen, lightseagreen 10px, thistle 10px, thistle 20px);
+}
+
+.mediumturquoise {
+  background: mediumturquoise;
+  color: darkmagenta;
+}
+
+.paleturquoise {
+  background: paleturquoise;
+  color: mediumslateblue;
+}
