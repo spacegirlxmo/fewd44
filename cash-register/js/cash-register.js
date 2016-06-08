@@ -37,8 +37,8 @@ function createItem(price) {
   entries.appendChild(li);
 }
 
-Update page functions
-------------------------------------------------
+//Update page functions
+//------------------------------------------------
 function updateTotal() {
   var finalTotal = 0;
   for(var i = 0; i < itemList.length; i = i + 1) {
