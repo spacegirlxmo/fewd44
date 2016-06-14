@@ -49,16 +49,16 @@ function updateTotal() {
 }
 
 
-// function updateTotal() {
-//   var finalTotal = 0;
-//   //forEach means the (global) function is called for each item in the itemList array
-//   //function(item) is called once per iteration
-//   //forEach internally does what the for loop does. it gives you the element without manually doing it
-//   itemList.forEach(function(item) {
-//     finalTotal = finalTotal + parseFloat(item)
-//   })
-//   total.textContent = "$" + finalTotal.toFixed(2);
-// }
+function updateTotal() {
+  var finalTotal = 0;
+  //forEach means the (global) function is called for each item in the itemList array
+  //function(item) is called once per iteration
+  //forEach internally does what the for loop does. it gives you the element without manually doing it
+  itemList.forEach(function(item) {
+    finalTotal = finalTotal + parseFloat(item)
+  })
+  total.textContent = "$" + finalTotal.toFixed(2);
+}
 
-// Utility functions
-// ------------------------------------------------
+Utility functions
+------------------------------------------------
