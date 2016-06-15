@@ -11,6 +11,6 @@ function onButtonClick(event) {
   var inputTask = "<span class='input-task'>" + taskItem.value + "</span>";
   var inputDate = "<span class='input-date'>" + taskDate.value + "</span>";
   //innerHTML, instead of taking in text string, it takes in html
-  li.innerHTML = check + inputTask + inputDate;
   itemList.appendChild(li);
+  li.innerHTML = check + inputTask + inputDate;
 }
