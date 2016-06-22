@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS transitions</title>
+    <style>
+
+  /*  div {
+      transition: all 2s ease;
+      transition-property: all;
+      transition-duration: 2s;
+      transition-timing-function: ease;
+    } */
+
+    div {
+      transition: all 4s ease;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+
+    .green {
+      background: green;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      background-color: green;
+      border-radius: 50%;
+    }
+
+    .oval {
+      border-radius: 10%;
+      background: blue;
+    }
+
+    section {
+      line-height: 50px;
+      width: 100px;
+      background: thistle;
+      text-align: center;
+    }
+
+    .close {
+      transform: translateY(-190px);
+    }
+
+    .container {
+      overflow: hidden;
+    }
+
+    .cover {
+      transition: all 2s ease-in-out;
+    }
+
+    .wheel {
+      width: 100px;
+      height: 100px;
+      transition: all 2s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+
+    .cover.spin {
+      transform: translateX(200px);
+    }
+
+    .wheel img {
+      width: 100%;
+    }
+
+    .spin .wheel {
+      transform: rotate(360deg);
+      transform-origin: 50% 50%;
+    }
+
+    .spin {
+      transform: translateX(500px);
+    }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <aside class="cover">
+    <aside class="wheel">
+      <img src="
+http://www.foxsports.com/content/dam/fsdigital/fscom/global/dev/static_resources/nba/teams/retina/9.png">
+      </aside>
+    </aside>
+    <div class="square"></div>
+    <div class="circle"></div>
+
+    <section class="blog-tab"> Blog </section>
+    <div class="container">
+      <div class="blog-content close">
+        <p>
+          You probably haven't heard of them man braid letterpress stumptown portland, skateboard blog chillwave taxidermy. Polaroid nihil pinterest, selvage vice raw denim YOLO yr green juice readymade minim occupy offal next level hoodie. Trust fund irony id nesciunt. Keytar knausgaard locavore, food truck mixtape try-hard forage retro kogi lumbersexual you probably haven't heard of them reprehenderit normcore tattooed hashtag. Ramps hammock godard, beard laborum lo-fi ullamco whatever +1 messenger bag before they sold out vinyl. VHS photo booth odio duis fashion axe, flexitarian disrupt. Messenger bag nisi umami, est fingerstache schlitz dreamcatcher pop-up do.
+        </p>
+      </div>
+    </div>
+    <script>
+
+    var square = document.querySelector('.square');
+    var circle = document.querySelector('.circle');
+    var blogTab = document.querySelector('.blog-tab');
+    var blogContent = document.querySelector('.blog-content');
+    var wheel = document.querySelector('.wheel');
+    var cover = document.querySelector('.cover')
+
+
+    square.addEventListener('click', roundIt);
+    circle.addEventListener('click', ovalIt);
+    blogTab.addEventListener('click', showBlogTab);
+    wheel.addEventListener('click', spin);
+
+    function roundIt() {
+      console.log('roundIt');
+      square.classList.toggle('green');
+    }
+
+    function ovalIt() {
+      console.log('squareIt');
+      circle.classList.toggle('oval');
+    }
+
+    function showBlogTab() {
+      blogContent.classList.toggle('close');
+    }
+
+    function spin() {
+      console.log('spin');
+      cover.classList.toggle('spin');
+    }
+
+    </script>
+  </body>
+</html>
