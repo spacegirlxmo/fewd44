@@ -3,12 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Stop Light</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/stop-light.css">
   </head>
   <body>
-
-    <button>Stop</button>
-    <button>Slow</button>
-    <button>Go</button>
-
+    <div class="container">
+      <div class="left">
+        <ul class="buttons">
+          <li><button class="stop">Stop</button></li>
+          <li><button class="slow">Slow</button></li>
+          <li><button class="go">Go</button></li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul class="light">
+          <li class="red-light">red</li>
+          <li class="yellow-light">yellow</li>
+          <li class="green-light">green</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+}
+
+ul {
+  display: inline-block;
+}
+
+div {
+  margin: auto;
+}
+
+
+
+/*buttons*/
+
+button {
+  width: 80px;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 90px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.stop {
+  margin-top: 150px;
+}
+
+
+/*light*/
+
+.light {
+  background-color: #21252B;
+  border-radius: 30px;
+  text-align: center;
+  width: 220px;
+  height: 435px;
+  margin-top: 66px;
+}
+
+.right li {
+  background-color: black;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 50px;
+  text-indent: -3000px;
+}
+
+.red-light {
+  margin-top: 19px;
+  margin-bottom: 18px;
+}
+
+.yellow-light {
+  margin-bottom: 18px;
+}
