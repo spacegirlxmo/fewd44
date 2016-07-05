@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Baño Bathroom Finder</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bano.css">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.js'></script>
+   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <h1>Baño</h1>
+    <p class="tagline">When Nature Calls in a City</p>
+      <header class="menu">
+        <section>Find</section>
+        <section>Submit</section>
+        <section>Contact</section>
+    </header>
+    <h2>Find a bathroom near you!</h2>
+    <div class="location">
+      <input placeholder="Address or Zip Code">
+      <button>Search</button>
+    </div>
+    <div id="map"></div>
+    <h2 class="results-title">Nearby Locations</h2>
+    <div class="sort">
+    <span>Sort by:</span>
+    <select name="select">
+      <option value""></option>
+      <option value="rating">Rating</option>
+      <option value="distance">Distance</option>
+    </select>
+    </div>
+  <ul class="results">
+    <li>
+      <p>Name</p>
+      <p>123 Main Street</p>
+    </li>
+    <li>
+      <p>Name</p>
+      <p>123 Main Street</p>
+    </li>
+    <li>
+      <p>Name</p>
+      <p>123 Main Street</p>
+    </li>
+  </ul>
+    <footer>
+      <a class="submit" href="#">Find a great bathroom? Submit it here!</a>
+      <p>Baño App &copy;2016</p>
+    </footer>
+    <script src="js/bano.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+h1 {
+padding-top: 15px;
+padding-bottom: 5px;
+text-align: center;
+}
+
+.tagline {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+header {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+section {
+  background: rosybrown;
+  color: navajowhite;
+  padding: 10px;
+  text-align: center;
+  border-right: solid 1px navajowhite;
+}
+
+section:last-child {
+  border-right: none;
+}
+
+.menu section {
+  flex: 1;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+#map {
+  display: block;
+  width: 375px;
+  height: 375px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.results-title {
+  text-align: center;
+}
+
+.results {
+  margin-left: 15px;
+}
+
+.sort {
+  text-align: center;
+  margin-left: 15px;
+}
+
+select {
+  width: 100px;
+  border-radius: 4px;
+}
+
+.results {
+  padding-bottom: 10px;
+}
+
+.results li {
+  padding: 15px;
+  border-bottom: 1px solid #C1C4CD;
+  margin-right: 15px;
+}
+
+.results li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+.submit {
+  display: block;
+  margin-bottom: 5px;
+}
