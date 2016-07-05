@@ -83,17 +83,17 @@ select {
   border-radius: 4px;
 }
 
-.results {
+.locations {
   padding-bottom: 10px;
 }
 
-.results li {
+.locations li {
   padding: 15px;
   border-bottom: 1px solid #C1C4CD;
   margin-right: 15px;
 }
 
-.results li:last-child {
+.locations li:last-child {
   border-bottom: none;
 }
 
