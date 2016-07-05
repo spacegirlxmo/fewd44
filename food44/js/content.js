@@ -17,3 +17,9 @@ var ikes = {
   "street_address": "3489 16th St.",
   "phone_number": "(415) 553-6888"
 }
+
+var restaurants = [
+  primavera,
+  pizzaRigazzia,
+  ikes
+];
