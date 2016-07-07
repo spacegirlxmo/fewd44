@@ -21,28 +21,28 @@ function initMap() {
 function showPosition(position) {
   console.log(position.coords.latitude);
   console.log(position.coords.longitude);
-  // map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-  map.setCenter(new google.maps.LatLng(37.790841, -122.401280));
+  map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+  // map.setCenter(new google.maps.LatLng(37.790841, -122.401280));
   map.setZoom(16);
   var image = "img/dot.png";
-  // var marker = new google.maps.Marker({
-  //   position: {
-  //     lat: position.coords.latitude,
-  //     lng: position.coords.longitude
-  //   },
-  //   map: map,
-  //   title: 'You are here!',
-  //   icon: image
-  // });
   var marker = new google.maps.Marker({
     position: {
-      lat: 37.790841,
-      lng: -122.401280
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
     },
     map: map,
     title: 'You are here!',
     icon: image
   });
+  // var marker = new google.maps.Marker({
+  //   position: {
+  //     lat: 37.790841,
+  //     lng: -122.401280
+  //   },
+  //   map: map,
+  //   title: 'You are here!',
+  //   icon: image
+  // });
   updateLocations();
 }
 
