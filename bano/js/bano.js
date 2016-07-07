@@ -1,4 +1,3 @@
-var x = document.getElementById("demo");
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -6,27 +5,49 @@ function getLocation() {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
-function showPosition(position) {
 
-  console.log(position.coords.latitude);
-  console.log(position.coords.longitude);
-    map.setCenter([position.coords.longitude, position.coords.latitude]);
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: 37.3382,
+      lng: -121.8863
+    },
+    zoom: 8
+  });
+  getLocation();
 }
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3BhY2VnaXJseG1vIiwiYSI6ImNpcHFiM28wYTA1b21mbW5jdXQ5NXh3MzAifQ.pQqsTB1XcyIa-mwLj5Fy8g';
+function showPosition(position) {
+  console.log(position.coords.latitude);
+  console.log(position.coords.longitude);
+  // map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+  map.setCenter(new google.maps.LatLng(37.790841, -122.401280));
+  map.setZoom(16);
+  var image = "img/dot.png";
+  // var marker = new google.maps.Marker({
+  //   position: {
+  //     lat: position.coords.latitude,
+  //     lng: position.coords.longitude
+  //   },
+  //   map: map,
+  //   title: 'You are here!',
+  //   icon: image
+  // });
+  var marker = new google.maps.Marker({
+    position: {
+      lat: 37.790841,
+      lng: -122.401280
+    },
+    map: map,
+    title: 'You are here!',
+    icon: image
+  });
+  updateLocations();
+}
 
-var map = new mapboxgl.Map({
-container: 'map', // container id
-style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-center: [-121.8863, 37.3382], // starting position
-zoom: 14 // starting zoom
-});
-
-getLocation();
 
 var locations = document.querySelector(".locations");
-
-
 
 function updateLocations() {
   bathrooms.forEach(createBathroom);
@@ -34,15 +55,33 @@ function updateLocations() {
 
 function createBathroom(bathrooms) {
   var li = document.createElement("li");
+  var span = document.createElement("span");
+  var h3 = document.createElement("h3");
   var p = document.createElement("p");
-  var p2 = document.createElement("p");
 
-  p.textContent = bathrooms.name;
-  p2.textContent = bathrooms.street_address;
+  span.textContent= bathrooms.rating;
+  span.className = bathrooms.class;
+  h3.textContent = bathrooms.name;
+  p.textContent = bathrooms.streetAddress;
 
+  li.appendChild(span);
+  li.appendChild(h3);
   li.appendChild(p);
-  li.appendChild(p2);
   locations.appendChild(li);
-}
 
-updateLocations();
+  var infowindow = new google.maps.InfoWindow({
+    content: bathrooms.name + "<br>" + bathrooms.streetAddress
+  });
+
+  var marker = new google.maps.Marker({
+    position: {
+      lat: bathrooms.lat,
+      lng: bathrooms.lng
+    },
+    map: map,
+  });
+
+  marker.addListener('click', function() {
+   infowindow.open(map, marker);
+ });
+}

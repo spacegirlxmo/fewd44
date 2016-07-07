@@ -1,11 +1,12 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: 'Open Sans', sans-serif, arial;
 }
 
 h1 {
-padding-top: 15px;
+padding-top: 35px;
 padding-bottom: 5px;
 text-align: center;
+font-size: 60px;
 }
 
 .tagline {
@@ -19,7 +20,7 @@ header {
 }
 
 section {
-  background: rosybrown;
+  background: green;
   color: navajowhite;
   padding: 10px;
   text-align: center;
@@ -28,6 +29,11 @@ section {
 
 section:last-child {
   border-right: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: navajowhite;
 }
 
 .menu section {
@@ -83,8 +89,12 @@ select {
   border-radius: 4px;
 }
 
+ul {
+  text-align: center;
+}
+
 .locations {
-  padding-bottom: 10px;
+  padding-bottom: 18px;
 }
 
 .locations li {
@@ -106,4 +116,42 @@ footer {
 .submit {
   display: block;
   margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.locations span {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.darkred {
+  color: darkred;
+}
+
+.green {
+  color: green;
+}
+
+.darkorange {
+  color: darkorange;
+}
+
+
+
+
+
+
+
+
+.contact-us {
+  text-align: center;
+}
+
+.contact {
+  font-size: 30px;
+}
+
+.address {
+  font-size: 18px;
+  font-weight: 100;
 }
