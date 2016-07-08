@@ -156,3 +156,16 @@ footer {
   font-size: 18px;
   font-weight: 100;
 }
+
+
+
+
+.form {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.business-name {
+  margin-bottom: 20px;
+}
